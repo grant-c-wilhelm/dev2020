@@ -10,7 +10,7 @@ const ListLink = props => (
 export default ({ children }) => (
 
 
-    <div style={{ margin: `3rem auto`, maxWidth: 650, padding: `1rem` }}>
+    <div style={{ margin: `3rem auto`, maxWidth: 750, padding: `1rem` }}>
         <header style={{ marginBottom: `1.5rem` }}>
             <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
                 <h3 style={{ display: `inline` }} >MySweetWebSite</h3>
