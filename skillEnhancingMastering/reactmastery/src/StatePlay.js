@@ -1,27 +1,41 @@
 import React, { Component } from 'react'
 
 import CounterDisplay from "./CounterDisplay"
+import ButtonComp from "./ButtonComp"
+import ButtonCompTwo from "./ButtonCompTwo"
+
+
 
 export default class StatePlay extends Component {
     constructor() {
         super()
         this.state = {
-            clickCounter: 0
+            count: 0
         }
-
     }
     handleClick = () => {
         this.setState(prevState => {
             return {
-                clickCounter: prevState.clickCounter + 1
+                count: prevState.count + 1
             }
         })
     }
+
+    handleClickTwo = () => {
+        this.setState(prevState => {
+
+            return {
+                count: prevState.count * 2
+            }
+        })
+    }
+
     render() {
         return (
             <div>
-                <button onClick={this.handleClick} >Add One</button>
-                <CounterDisplay count={this.state.clickCounter} />
+                <ButtonComp handleClick={this.handleClick} />
+                <ButtonCompTwo handleClickTwo={this.handleClickTwo} />
+                <CounterDisplay count={this.state.count} />
             </div>
         )
     }
