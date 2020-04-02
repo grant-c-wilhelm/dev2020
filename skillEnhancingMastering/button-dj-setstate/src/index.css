@@ -1,0 +1,30 @@
+.center {
+  position: relative;
+  transform: translateX(28vw);
+}
+
+.box {
+  display: inline-block;
+  margin-right: 5px;
+  border: solid black 5px;
+  height: 250px;
+  width: 250px;
+}
+.boxTwo {
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: 300px;
+  left: -33em;
+  border: solid black 5px;
+  height: 250px;
+  width: 250px;
+}
+.jumbo-button {
+  position: relative;
+  top: 40vh;
+  left: 35vw;
+  height:3em;
+  width: 10em;
+  font-size: 30px;
+}
